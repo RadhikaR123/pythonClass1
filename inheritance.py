@@ -7,11 +7,8 @@ class person:
     def printname(self):
         print(self.firstname, self.lastname)
 
-# create object bu using person class
-# asdsad
-
-# x= person("/am", "Raj")
-# x.printname()?
+        
+# create child class that inherit parents class 
 
 class student(person):
     def __init__(self, fname, lname, year):
