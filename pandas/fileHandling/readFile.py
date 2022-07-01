@@ -1,6 +1,4 @@
-
-
-obj1=open("exersice.txt","r")
+obj1=open("/home/navgurukul/Desktop/pythonClass/demofile.txt","r")
 count=0
 str1=" "
 

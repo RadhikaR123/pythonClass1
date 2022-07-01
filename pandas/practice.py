@@ -1,6 +1,7 @@
 from textwrap import indent
 import pandas as pd
 import json
+import matplotlib.pyplot as plt
 
 
 # df = pd.read_csv('/home/navgurukul/Desktop/pythonClass/pandas/data.csv')
@@ -23,13 +24,21 @@ df = pd.read_json('/home/navgurukul/Desktop/pythonClass/practice.json')
 
 
 
-df.loc[0,"name"]= "radhi"
+# df.loc[0,"name"]= "radhi"
 
-for i in df.index:
-    if df.loc[i,"city"] == "k":
-        df.loc[i,"city"] = "R"
+# for i in df.index:
+#     if df.loc[i,"city"] == "k":
+#         df.loc[i,"city"] = "R"
 
-print(df)
+# print(df)
+
+print(df.corr())
 
 
 
+#plotting of data
+
+# df.plot(kind = 'scatter', x= 'name', y='work')
+
+df["name"].plot(kind = 'hist')
+plt.show()
