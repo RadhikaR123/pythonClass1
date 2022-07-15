@@ -9,3 +9,5 @@ df.plot(kind = 'scatter', x='Duration', y="Calories")    # it will plot the data
 
 df["Duration"].plot(kind = 'hist')       # it will take only one column and show on historical bar
 plt.show()
+
+
